@@ -1,22 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package iluminacao;
 
-/**
- *
- * @author administrador6
- */
 public class Iluminacao {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         Lampada1 c1 = new Lampada1();
+        c1.ligar();
+        c1.desligar();
+        c1.cor = "amarela";
+        c1.tensao = 20;
+        c1.status();
         
+        System.out.println("");
+        Lampada1 c2 = new Lampada1();
+        c2.ligar();
+        c2.cor = "verde";
+        c2.tensao = 30;        
+        c2.status();
     }
     
 }

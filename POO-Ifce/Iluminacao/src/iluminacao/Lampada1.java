@@ -14,13 +14,33 @@ public class Lampada1 {
     String cor;
     boolean ligado;
     
+    /*/construtor
+
+    public Lampada1(int tensao, String cor, boolean ligado){
+        this.tensao = tensao;
+        this.cor = cor;
+        this.ligado = ligado;
+        
+        
+    }
+    
+    */
+    
     //métodos
     void ligar(){
         ligado = true;
+        System.out.println("A luz foi ligada!");
     }
     
     void desligar(){
         ligado = false;
+        System.out.println("A luz foi desligada!");
+    }
+    
+    void status(){
+        System.out.println("Tensão: " + tensao);
+        System.out.println("Cor: " + cor);
+        System.out.println("Ligado/Desligado: " + ligado);
     }
     
 }
